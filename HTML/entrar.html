@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Logar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet" >
+      
+       <!--JS-->
+       <script
+       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+       crossorigin="anonymous"
+     ></script>
+     <script src="../JS/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="../JS/main.js"></script>
+
+     <style>
+
+      body{
+        background-color: #58A4FA;
+      }
+
+
+  </style>
+     
+</head>
+  <body>
+     <!-- HEADER -->
+<!-- header -->
+<div id="header">
+  <nav class="navbar navbar-expand-lg bg-light" style="z-index: 1;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">
+          
+        <img src="../IMAGENS/Uso_Geral/Logo - Oficial.png" class="img-fluid"  width="38" style="width:38%; height: 38%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="d-flex" role="search" action="/pesquisar" method="POST" >
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" name="Nome">
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+      </form>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navbarNav">
+          <li class="nav-item">
+            <a class="nav-link active" href="/promocoes">Pesquisar Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/produtos">Pesquisar Produtos</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" href="#">Carrinho</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link active" href="#">Compra e Entrega</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="/entrar#">Entrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="/telaCadastrar">Cadastra-se</a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- //header -->
+
+    <!-- Caixa de Digitação -->
+   <br><br><br><br> 
+   <center>
+    <div>
+      
+      <div class="align-self-center text-center"><font color="white"><legend><h1>ENTRAR</h1></legend></font></div>
+    <div id="contato">
+      <div class="container" >
+        
+            <div class="email"  style="width: 50rem;">
+              <form action="/logar" method="POST">
+                <div style="display: block; justify-items: center;">
+                <img src="../IMAGENS/Uso_Geral/Logo - Oficial.png" style="width:20%; height:30%;">
+              </div>
+                <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3" class="block">
+                  <b><font color="black"><label>Email</label></font></b><br><br>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="color: black;" name="EmailDoUsuario">
+                  <div>
+                  
+              <br> <div class="mb-3">
+                  <b><font color="black"><label>Senha</label></font></b><br><br>
+                  <input type="password" class="form-control" id="exampleInputPassword1" style="color: black;" name="Senha" >
+                </div>
+                <div
+                class="text-right"><h6> <a class="nav-link active " href="#">Esqueci a Senha</a></h6>
+                </div>
+                
+                <button type="submit" class="btn btn-primary justify-content-center" name="botao">Entrar</button>
+              </form>
+              
+          </div>
+      </div> 
+      <br>
+      ??MensagemDeErro??
+  </div>
+  
+  </div>
+  
+</center><br><br><br>
+    <!-- //Fim da Caixa de Digitação -->
+  </body>

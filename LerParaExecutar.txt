@@ -1,0 +1,6 @@
+Esse projeto esta utilizando as URLs Amigaveis, para que possa ser possivel executa-lo é preciso que se habilite os modulos de reescrita no 
+servidor, redirencinando para o arquivo index.php as urls, e deve-se adiconar todo o conteudo na pasta onde serão executados os arquivos, sem que esteja o conteudo dentro de uma pasta
+por exemplo no nginx:
+C:\\nginx\html\Todo o conteudo
+por exemplo no xampp:
+C:\\nginx\htdoc\Todo o conteudo

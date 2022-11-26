@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet" >
+    <script src="../JS/Carrinho.js"></script>
+      
+       <!--JS-->
+       <script
+       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+       crossorigin="anonymous"
+     ></script>
+     <script src="../JS/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="../JS/main.js"></script>
+     <link href="../CSS/style.css" rel="stylesheet" >
+     
+
+     <style>
+      body{
+        background-color: #58A4FA;
+      }
+    </style>
+    
+</head>
+  <body>
+     <div id="header">
+			  ??cabecalho??
+      </div>
+
+      <!--SLIDER-->
+      <div id="slider" class="block">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4">
+              <h1>Promoção do Dia</h1>
+              <h4 class="mb-4">Bananas e Abacaxis</h4>
+              <a
+                href="#"
+                class="button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Saiba mais</a>
+              <a
+                href="/promocoes"
+                class="button btn btn-outline-primary button-primary-outline d-md-inline-block d-block">Promoçôes</a>
+            </div>
+            <div class="col-lg-8 col-md-6 align-self-center text-center">
+              <img src="../IMAGENS/Uso_Geral/Propaganda.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--//SLIDER-->
+
+      <font color="white"><div
+      class="align-self-center text-center"><legend><h1>PROMOÇÃO</h1></legend>
+      </div></font>
+      <!--Card-->
+       <!-- Modelos para clonagem e inclusão na área de exibição -->
+       <div class="models" >
+        <div class="models-item" >
+            <a href="">
+                <div class="models-item--img" style="background-color: #9BC2EE"><img src=""/></div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price" style="color: red">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc" style="color: white">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+  <header>
+      <div class="menu-openner">
+          <span>0</span>
+          <span class="material-icons">shopping_cart</span>
+      </div>
+  </header>
+  <main>
+      <h1 style="visibility: hidden;"> Produtos</h1>
+      <div class="models-area"></div>
+
+      <center><aside>
+        <div class="cart--area">
+            <div class="menu-closer">
+                <span class="material-icons">close</span>
+            </div>
+            <h1>Seus Modelos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+              <span>Total</span>
+              <font color="red"><span>R$ --</span></font>
+          </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside></center>
+
+  </main>
+  
+  <div class="modelsWindowArea">
+      <div class="modelsWindowBody" style="background-color: #9BC2EE">
+          <!-- 
+              Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+              da janela modal vai ser igual, logo vamos fazer uma função
+          -->
+          <div class="modelsInfo--cancelMobileButton">Voltar</div>
+          <div class="modelsBig">
+              <img src="" />
+          </div>
+          <div class="modelsInfo" >
+              <h1>--</h1>
+              <div class="modelsInfo--desc">--</div>
+              <div class="modelsInfo--sizearea">
+                  <div class="modelsInfo--sector">Escala</div>
+                  <div class="modelsInfo--sizes">
+                      <div data-key="0" class="modelsInfo--size"> <span>--</span></div>
+                      <div data-key="1" class="modelsInfo--size selected"> <span>--</span></div>
+                      <div data-key="2" class="modelsInfo--size"> <span>--</span></div>
+                  </div>
+              </div>
+              <div class="modelsInfo--pricearea">
+                  <div class="modelsInfo--sector">Preço</div>
+                  <div class="modelsInfo--price">
+                      <div class="modelsInfo--actualPrice">R$ --</div>
+                      <div class="modelsInfo--qtarea">
+                          <button class="modelsInfo--qtmenos">-</button>
+                          <div class="modelsInfo--qt">1</div>
+                          <button class="modelsInfo--qtmais">+</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+              <div class="modelsInfo--cancelButton">Cancelar</div>
+          </div>
+      </div>
+  </div>
+<!-- Card -->
+
+   <!--FOOTER-->
+   <footer id="contato">
+    <div class="container">
+      <div class="email">
+        <img src="../IMAGENS/Uso_Geral/aviao.png" />
+        <font color="#58A4FA"><h2 class="title text-center">Fique por dentro das novidades</h2></font>
+        <form>
+          <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
+            <label for="email" class="sr-only">Email</label>
+          <input style="color: black"
+              type="email"
+              class="form-control w-100"
+              id="email_input"
+              placeholder="seu email"/>
+              <div class="flex-grow-1 flex-md-grow-0"><br><br>
+                <button
+                  type="submit"
+                  class="btn btn-outline-primary button mb-3 d-md-inline d-block w-100">
+                  Cadastre-se
+                </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="logo py-4">
+        <div class="row">
+          <div class="col-md-6 align-self-center text-md-left text-center">
+         
+          </div>
+          <div class="col-md-6 align-self-center text-right">
+            <ul>
+              <li>
+                <a href="
+                https://web.facebook.com/profile.php?id=100088090689655"><img src="../IMAGENS/REDES_SOCIAS/facebook.png" /></a>
+              </li>
+              <li>
+                <a href="
+
+                https://instagram.com/minimercado_taiyototsuki?igshid=YmMyMTA2M2Y="><img src="../IMAGENS/REDES_SOCIAS/instagram.png" /></a>
+              </li>
+              <li>
+                <a href="/quemsomos"><img src="../IMAGENS/Uso_Geral/pessoas.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <script type="text/javascript" src="JS/cards.js"></script>
+        <script>
+          let modelsJson = cards(
+            [
+            "??Produto1??",
+            "??Produto2??",
+            "??Produto3??"
+            ], 
+            [
+            "IMAGENS/??Foto1??",
+            "IMAGENS/??Foto2??",
+            "IMAGENS/??Foto3??"
+            ], 
+            [
+            ??Preco1??,
+            ??Preco2??,
+            ??Preco3??
+            ], 
+            
+            [
+            "??Descricao1??",
+            "??Descricao2??",
+            "??Descricao3??"
+          ]);
+        </script>
+      <script type="text/javascript" src="JS/script.js"></script>
+    </div>
+  </footer>
+  <!--//FOOTER-->
+  </body>
+</html>

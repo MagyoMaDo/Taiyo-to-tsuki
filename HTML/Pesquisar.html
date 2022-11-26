@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Pesquisar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet" >
+    <link href="../CSS/style.css" rel="stylesheet" >
+      
+       <!--JS-->
+       <script
+       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+       crossorigin="anonymous"
+     ></script>
+     <script src="../JS/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="../JS/main.js"></script>
+     <script src="../JS/Carrinho.js"></script>
+     <link href="../CSS/invisivel.css" rel="stylesheet">
+
+     <style>
+      body{
+        background-color: #58A4FA;
+      }
+      </style>
+</head>
+  <body>
+??cabecalho??
+
+   <br><br> <div
+    class="align-self-center text-center" style="color: white;"><legend><h1>PRODUTOS</h1></legend>
+    </div>
+    <br><br>
+      <!-- Cards -->
+          
+             <!-- Modelos para clonagem e inclusão na área de exibição -->
+    <div class="models">
+      <div class="models-item">
+          <a href="">
+              <div class="models-item--img" style="background-color: #9BC2EE"><img src=""/></div>
+              <div class="models-item--add">+</div>
+          </a>
+          <div class="models-item--price" style="color: red">R$ --</div>
+          <div class="models-item--name">--</div>
+          <div class="models-item--desc" >--</div>
+      </div>
+      <div class="cart--item">
+          <img src="" />
+          <div class="cart--item-nome">--</div>
+          <div class="cart--item--qtarea">
+              <button class="cart--item-qtmenos">-</button>
+              <div class="cart--item--qt">1</div>
+              <button class="cart--item-qtmais">+</button>
+          </div>
+      </div>
+  </div>
+  <header>
+      <div class="menu-openner">
+          <span>0</span>
+          <span class="material-icons">shopping_cart</span>
+      </div>
+  </header>
+  <main>
+    <h1 style="visibility: hidden;"> Produtos</h1>
+      <h1>??erro??</h1>
+      <div class="models-area"></div>
+  </main>
+  <aside>
+    <div class="cart--area" style="background-color: #9BC2EE">
+          <div class="menu-closer">
+              <span class="material-icons">close</span>
+          </div>
+          <h1>Seus Modelos</h1>
+          <div class="cart"></div>
+          <div class="cart--details">
+              <div class="cart--totalitem subtotal">
+                  <span>Subtotal</span>
+                  <span>R$ --</span>
+              </div>
+              <div class="cart--totalitem desconto">
+                  <span>Desconto (-10%)</span>
+                  <span>R$ --</span>
+              </div>
+              <div class="cart--totalitem total big">
+                  <span>Total</span>
+                  <span>R$ --</span>
+              </div>
+              <div class="cart--finalizar">Finalizar a compra</div>
+          </div>
+      </div>
+  </aside>
+  <div class="modelsWindowArea">
+      <div class="modelsWindowBody" style="background-color: #9BC2EE">
+          <!-- 
+              Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+              da janela modal vai ser igual, logo vamos fazer uma função
+          -->
+          <div class="modelsInfo--cancelMobileButton">Voltar</div>
+          <div class="modelsBig">
+              <img src="" />
+          </div>
+          <div class="modelsInfo">
+              <h1>--</h1>
+              <div class="modelsInfo--desc" style="color: white">--</div>
+              <div class="modelsInfo--sizearea">
+                  <div class="modelsInfo--sector" style="color: white">Escala</div>
+                  <div class="modelsInfo--sizes">
+                      <div data-key="0" class="modelsInfo--size"> <span>--</span></div>
+                      <div data-key="1" class="modelsInfo--size"> <span>--</span></div>
+                      <div data-key="2" class="modelsInfo--size selected"> <span>--</span></div>
+                  </div>
+              </div>
+              <div class="modelsInfo--pricearea">
+                  <div class="modelsInfo--sector" style="color: white">Preço</div>
+                  <div class="modelsInfo--price">
+                      <div class="modelsInfo--actualPrice" style="color: red">R$ --</div>
+                      <div class="modelsInfo--qtarea">
+                          <button class="modelsInfo--qtmenos">-</button>
+                          <div class="modelsInfo--qt">1</div>
+                          <button class="modelsInfo--qtmais">+</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+              <div class="modelsInfo--cancelButton">Cancelar</div>
+          </div>
+      </div>
+  </div>
+           
+
+          <!--Cards-->
+
+          <script type="text/javascript" src="../JS/cardsProduto.js"></script>
+          <script>
+            let modelsJson = cards(
+              [
+              "??Produto1??",
+              "??Produto2??",
+              "??Produto3??",
+              "??Produto4??",
+              "??Produto5??",
+              "??Produto6??",
+              "??Produto7??",
+              "??Produto8??",
+              "??Produto9??",
+              "??Produto10??",
+              "??Produto11??",
+              "??Produto12??"
+              ], 
+              [
+              "IMAGENS/??Foto1??",
+              "IMAGENS/??Foto2??",
+              "IMAGENS/??Foto3??",
+              "IMAGENS/??Foto4??",
+              "IMAGENS/??Foto5??",
+              "IMAGENS/??Foto6??",
+              "IMAGENS/??Foto7??",
+              "IMAGENS/??Foto8??",
+              "IMAGENS/??Foto9??",
+              "IMAGENS/??Foto10??",
+              "IMAGENS/??Foto11??",
+              "IMAGENS/??Foto12??"
+              ], 
+              [
+              '??Preco1??',
+              '??Preco2??',
+              '??Preco3??',
+              '??Preco4??',
+              '??Preco5??',
+              '??Preco6??',
+              '??Preco7??',
+              '??Preco8??',
+              '??Preco9??',
+              '??Preco10??',
+              '??Preco11??',
+              '??Preco12??'
+              ], 
+              
+              [
+              "??Descricao1??",
+              "??Descricao2??",
+              "??Descricao3??",
+              "??Descricao4??",
+              "??Descricao5??",
+              "??Descricao6??",
+              "??Descricao7??",
+              "??Descricao8??",
+              "??Descricao9??",
+              "??Descricao10??",
+              "??Descricao11??",
+              "??Descricao12??"
+            ]);
+          
+          </script>
+          <!--Script-->
+          <script type="text/javascript" src="../JS/script.js"></script>
+
+
+
+
+
+
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" id="??Visivel1??"><a class="page-link" href="pesquisar???linkAnterior?????Nome??"><</a></li>
+          <li class="page-item" id="??Visivel2??"><a class="page-link" href="pesquisar???link1?????Nome??">??link1??</a></li>
+          <li class="page-item" id="??Visivel3??"><a class="page-link" href="pesquisar???link2?????Nome??">??link2??</a></li>
+          <li class="page-item" id="??Visivel4??"><a class="page-link" href="pesquisar???linkAtual?????Nome??">??linkAtual??</a></li>
+          <li class="page-item" id="??Visivel5??"><a class="page-link" href="pesquisar???link4?????Nome??">??link4??</a></li>
+          <li class="page-item" id="??Visivel6??"><a class="page-link" href="pesquisar???link5?????Nome??">??link5??</a></li>
+          <li class="page-item" id="??Visivel7??"><a class="page-link" href="pesquisar???linkProximo?????Nome??">></a></li>
+        </ul>
+      </nav>
+          </div>
+          
+            </div>
+          </div>          
+        </div>
+        <br>
+        <br>
+      </div>
+   <!--FOOTER-->
+   <footer id="contato">
+    <div class="container" >
+      <div class="email">
+        <img src="../IMAGENS/Uso_Geral/aviao.png" />
+        <h2 class="title text-center">Fique por dentro das novidades</h2>
+        <h4 class="subtitle text-center mb-4">
+          Descrição
+        </h4>
+        <form>
+          <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
+            <label for="email" class="sr-only">Password</label>
+            <input
+              type="email"
+              class="form-control w-100"
+              id="email_input"
+              placeholder="seu email"/>
+              <div class="flex-grow-1 flex-md-grow-0">
+                <button
+                  type="submit"
+                  class="btn btn-light button mb-3 d-md-inline d-block w-100">
+                  cadastre-se
+                </button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      <div class="logo py-4">
+        <div class="row">
+          <div class="col-md-6 align-self-center text-md-left text-center">
+            <img src="../IMAGENS/Uso_Geral/Logo - PT1.jpg" class="img-fluid" />
+          </div>
+          <div class="col-md-6 align-self-center text-right">
+            <ul>
+              <li>
+                <a href="#"><img src="../IMAGENS/REDES_SOCIAS/facebook.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../IMAGENS/REDES_SOCIAS/instagram.png" /></a>
+              </li>
+              <li>
+                <a href="/quemsomos"><img src="../IMAGENS/Uso_Geral/pessoas.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--//FOOTER-->
+  </body>
